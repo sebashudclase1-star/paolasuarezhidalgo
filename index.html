@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paola Suárez Hidalgo | Community Manager & Fotografía</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-brand">Paola <span>Suárez</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#acerca">Acerca de mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#fotografia">Fotografía</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="inicio">
+  <div class="hero-text">
+    <span class="hero-tag fade-up">✦ Community Manager & Fotógrafa</span>
+    <h1 class="hero-name fade-up delay-1">Paola<br><em>Suárez</em><br>Hidalgo</h1>
+    <p class="hero-role fade-up delay-2">Estrategia digital · Contenido visual</p>
+    <p class="hero-desc fade-up delay-3">Transformo marcas en comunidades. Creo contenido que conecta, genera conversación y convierte seguidores en clientes reales.</p>
+    <div class="hero-btns fade-up delay-4">
+      <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+      <a href="#contacto" class="btn-outline">Hablemos</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-num">3+</div><div class="stat-label">Años exp.</div></div>
+      <div class="stat-item"><div class="stat-num">20+</div><div class="stat-label">Marcas</div></div>
+      <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Dedicación</div></div>
+    </div>
+    <div class="hero-photo-frame">
+      <div class="hero-photo-placeholder">
+        <i class="fa-solid fa-user"></i>
+        <p>Agrega aquí tu foto de perfil</p>
+      </div>
+    </div>
+    <div class="hero-badge"><strong>+3</strong>años de<br>experiencia</div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ACERCA DE MÍ -->
+<section id="acerca">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <div class="about-img">
+          <i class="fa-solid fa-camera-retro"></i>
+        </div>
+        <div class="about-img-note">
+          📍 Colombia<br>Disponible para proyectos<br>presenciales y remotos
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-label">Acerca de mí</p>
+        <h2 class="section-title">Soy Paola, tu aliada en <em>redes sociales</em></h2>
+        <p class="about-desc">
+          Soy Community Manager y fotógrafa creativa con pasión por construir presencias digitales auténticas. Me especializo en crear estrategias de contenido adaptadas a cada marca, gestionar comunidades activas y capturar momentos que cuentan historias poderosas.
+        </p>
+        <p class="about-desc">
+          Combino análisis de datos con sensibilidad visual para lograr resultados que van más allá de los likes: genero conexión real entre marcas y personas.
+        </p>
+        <div class="skills-list">
+          <span class="skill-tag">Gestión de redes sociales</span>
+          <span class="skill-tag">Creación de contenido</span>
+          <span class="skill-tag">Estrategia digital</span>
+          <span class="skill-tag">Fotografía</span>
+          <span class="skill-tag">Diseño gráfico</span>
+          <span class="skill-tag">Copywriting</span>
+          <span class="skill-tag">Analytics</span>
+          <span class="skill-tag">Canva Pro</span>
+          <span class="skill-tag">Meta Ads</span>
+        </div>
+        <div class="social-row">
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="social-btn" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PROYECTOS -->
+<section id="proyectos">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Proyectos</p>
+        <h2 class="section-title">Trabajo que <em>habla</em> por sí solo</h2>
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-btn active" onclick="filterProjects('todos', this)">Todos</button>
+        <button class="filter-btn" onclick="filterProjects('redes', this)">Redes</button>
+        <button class="filter-btn" onclick="filterProjects('campanas', this)">Campañas</button>
+        <button class="filter-btn" onclick="filterProjects('contenido', this)">Contenido</button>
+      </div>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card" data-cat="redes">
+        <div class="project-img">
+          <i class="fa-brands fa-instagram"></i>
+          <div class="project-overlay"><span class="project-overlay-text">Ver proyecto →</span></div>
+        </div>
+        <div class="project-info">
+          <p class="project-cat">Redes sociales</p>
+          <h3 class="project-name">Gestión Instagram Marca A</h3>
+          <p class="project-desc">Crecimiento de 0 a 5K seguidores en 3 meses con estrategia de contenido orgánico.</p>
+        </div>
+      </div>
+      <div class="project-card" data-cat="campanas">
+        <div class="project-img gold-bg">
+          <i class="fa-solid fa-bullhorn"></i>
+          <div class="project-overlay"><span class="project-overlay-text">Ver proyecto →</span></div>
+        </div>
+        <div class="project-info">
+          <p class="project-cat">Campañas</p>
+          <h3 class="project-name">Lanzamiento de Producto</h3>
+          <p class="project-desc">Campaña 360° en redes con +40% de conversiones respecto al objetivo inicial.</p>
+        </div>
+      </div>
+      <div class="project-card" data-cat="contenido">
+        <div class="project-img dark-bg">
+          <i class="fa-solid fa-photo-film"></i>
+          <div class="project-overlay"><span class="project-overlay-text">Ver proyecto →</span></div>
+        </div>
+        <div class="project-info">
+          <p class="project-cat">Contenido</p>
+          <h3 class="project-name">Identidad Visual Marca B</h3>
+          <p class="project-desc">Rediseño de feed y guía de estilo visual para posicionamiento de marca premium.</p>
+        </div>
+      </div>
+      <div class="project-card" data-cat="redes">
+        <div class="project-img">
+          <i class="fa-brands fa-tiktok"></i>
+          <div class="project-overlay"><span class="project-overlay-text">Ver proyecto →</span></div>
+        </div>
+        <div class="project-info">
+          <p class="project-cat">Redes sociales</p>
+          <h3 class="project-name">Estrategia TikTok</h3>
+          <p class="project-desc">Presencia en TikTok desde cero, con viral orgánico de 200K reproducciones.</p>
+        </div>
+      </div>
+      <div class="project-card" data-cat="campanas">
+        <div class="project-img gold-bg">
+          <i class="fa-solid fa-heart"></i>
+          <div class="project-overlay"><span class="project-overlay-text">Ver proyecto →</span></div>
+        </div>
+        <div class="project-info">
+          <p class="project-cat">Campañas</p>
+          <h3 class="project-name">Campaña Día de la Madre</h3>
+          <p class="project-desc">Contenido emocional que generó +80% de engagement durante la campaña estacional.</p>
+        </div>
+      </div>
+      <div class="project-card" data-cat="contenido">
+        <div class="project-img dark-bg">
+          <i class="fa-solid fa-pen-nib"></i>
+          <div class="project-overlay"><span class="project-overlay-text">Ver proyecto →</span></div>
+        </div>
+        <div class="project-info">
+          <p class="project-cat">Contenido</p>
+          <h3 class="project-name">Copywriting y Storytelling</h3>
+          <p class="project-desc">Creación de narrativa de marca coherente para blog, redes y email marketing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- FOTOGRAFÍA -->
+<section id="fotografia">
+  <div class="container">
+    <p class="section-label">Fotografía</p>
+    <h2 class="section-title">El mundo a través de <em>mi lente</em></h2>
+    <p class="photo-intro">Capturo historias, emociones y momentos únicos. La fotografía es mi otra forma de comunicar — cargá tus imágenes y arma tu galería personal.</p>
+
+    <div class="photo-upload-zone" onclick="document.getElementById('photoUpload').click()">
+      <input type="file" id="photoUpload" accept="image/*" multiple onchange="handlePhotoUpload(event)">
+      <div class="upload-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+      <p class="upload-text"><strong>Haz clic o arrastra tus fotos aquí</strong><br>JPG, PNG, WEBP • Múltiples archivos</p>
+    </div>
+
+    <div class="photo-gallery" id="photoGallery">
+      <div class="photo-empty" id="photoEmpty">
+        <i class="fa-regular fa-images"></i>
+        Sube tus fotos para poblar la galería
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<div class="section-divider" style="background: linear-gradient(90deg, transparent, rgba(184,153,106,0.15), transparent);"></div>
+
+<!-- EMPRESAS -->
+<section id="empresas">
+  <div class="container">
+    <p class="section-label">Empresas</p>
+    <h2 class="section-title">Marcas que han <em>confiado</em> en mí</h2>
+    <p class="empresas-intro">He colaborado con negocios de distintos sectores, desde emprendimientos locales hasta marcas con presencia nacional, siempre con el mismo compromiso y dedicación.</p>
+
+    <div class="logos-grid">
+      <div class="logo-card">
+        <div class="logo-icon"><i class="fa-solid fa-store"></i></div>
+        <span class="logo-name">Empresa 1</span>
+      </div>
+      <div class="logo-card">
+        <div class="logo-icon"><i class="fa-solid fa-spa"></i></div>
+        <span class="logo-name">Empresa 2</span>
+      </div>
+      <div class="logo-card">
+        <div class="logo-icon"><i class="fa-solid fa-utensils"></i></div>
+        <span class="logo-name">Empresa 3</span>
+      </div>
+      <div class="logo-card">
+        <div class="logo-icon"><i class="fa-solid fa-shirt"></i></div>
+        <span class="logo-name">Empresa 4</span>
+      </div>
+      <div class="logo-card">
+        <div class="logo-icon"><i class="fa-solid fa-dumbbell"></i></div>
+        <span class="logo-name">Empresa 5</span>
+      </div>
+      <div class="logo-card">
+        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <span class="logo-name">Empresa 6</span>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <h3 class="testi-title">Lo que dicen de mí</h3>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-quote">"Paola transformó completamente nuestra presencia en redes. Su creatividad y estrategia nos llevaron a un nivel que no esperábamos en tan poco tiempo."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AM</div>
+            <div><p class="testi-name">Ana M.</p><p class="testi-role">Fundadora · Marca de moda</p></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-quote">"Excelente manejo de nuestra comunidad. Siempre propone ideas frescas y los resultados en ventas se notaron desde el primer mes."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">CR</div>
+            <div><p class="testi-name">Carlos R.</p><p class="testi-role">Gerente · Restaurante local</p></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-quote">"Su trabajo fotográfico para nuestra marca fue impecable. Captó exactamente la esencia que queríamos transmitir."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">LP</div>
+            <div><p class="testi-name">Laura P.</p><p class="testi-role">Directora creativa · Bienestar</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="section-label">Contacto</p>
+        <h2 class="section-title">¿Listo para <em>crecer</em> juntos?</h2>
+        <p class="contact-desc">Cuéntame sobre tu marca y tus objetivos. Me encantará escucharte y proponerte una estrategia a medida.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-item-text">
+              <p>Correo electrónico</p>
+              <p>paola@ejemplo.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="contact-item-text">
+              <p>WhatsApp</p>
+              <p>+57 300 000 0000</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-item-text">
+              <p>Ubicación</p>
+              <p>Colombia · Proyectos remotos</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="contact-item-text">
+              <p>Instagram</p>
+              <p>@paolasuarezh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <div id="formContent">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nombre *</label>
+              <input type="text" id="cNombre" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" id="cEmail" placeholder="tu@email.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Empresa / Marca</label>
+            <input type="text" id="cEmpresa" placeholder="Nombre de tu negocio (opcional)">
+          </div>
+          <div class="form-group">
+            <label>Servicio de interés</label>
+            <select id="cServicio">
+              <option value="">Selecciona un servicio</option>
+              <option>Gestión de redes sociales</option>
+              <option>Estrategia de contenido</option>
+              <option>Fotografía de marca</option>
+              <option>Campañas publicitarias</option>
+              <option>Consultoría digital</option>
+              <option>Paquete completo</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Mensaje *</label>
+            <textarea id="cMensaje" placeholder="Cuéntame sobre tu proyecto, tus objetivos y en qué puedo ayudarte..."></textarea>
+          </div>
+          <button class="btn-primary" style="width:100%;" onclick="enviarFormulario()">Enviar mensaje &nbsp;→</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <i class="fa-solid fa-circle-check" style="color: var(--rose);"></i>
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 0.5rem;">¡Mensaje enviado!</h3>
+          <p style="color: var(--text-muted);">Gracias por escribirme. Te responderé a la brevedad 💌</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Paola <span>Suárez</span> Hidalgo</div>
+  <p class="footer-tagline">Community Manager · Fotógrafa · Estratega Digital</p>
+  <div class="footer-social">
+    <a href="#" class="footer-soc" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" class="footer-soc" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" class="footer-soc" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="#" class="footer-soc" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+  </div>
+  <p class="footer-copy">© 2026 Paola Suárez Hidalgo · Todos los derechos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
